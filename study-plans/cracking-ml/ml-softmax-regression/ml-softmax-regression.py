@@ -31,4 +31,4 @@ def softmax_regression(X, y, n_classes, lr=0.01, n_iters=1000):
         W-=lr*dW
         b-=lr*db
 
-    return W, b
+    return W.tolist(), b.tolist()
